@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang=ja>
+<!-- Mirrored from aidn.jp/news/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Aug 2022 04:04:48 GMT -->
+<head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=apple-mobile-web-app-capable content=yes><meta name=viewport content="width=device-width, initial-scale=1.0, user-scalable=1"><meta name=description content="daniwell official website. 自作の音楽やコンテンツ、アプリなどを公開しています。"><title>AIDN | NEWS</title><meta name=twitter:card content=summary_large_image><meta name=twitter:image content=https://aidn.jp/shared/img/og/aidn_news.png><meta name=twitter:site content=@daniwell_aidn><meta property=og:locale content=ja_JP><meta property=og:type content=website><meta property=og:image content=https://aidn.jp/shared/img/og/aidn_news.png><meta property=og:title content="AIDN | NEWS"><meta property=og:description content="daniwell official website. 自作の音楽やコンテンツ、アプリなどを公開しています。"><meta property=fb:app_id content=260132667518211><link rel=apple-touch-icon href=../apple-touch-icon.png><link rel="shortcut icon" href=../shared/icon/favicon.ico><link rel=alternate media=handheld href="index.html"><link href="../../fonts.googleapis.com/css2783d.css?family=Noto+Sans+JP:wght@500&amp;family=Poppins:wght@500&amp;display=swap" rel=stylesheet><link href=../shared/main/css/mainc4ca.css?1 rel=stylesheet><style>#news {
+    margin: 4vmin 4.4vmin;
+    word-break: break-all;
+    
+    margin-bottom: 0;
+    padding-bottom: 4vmin;
+}
+
+.news {
+    margin-bottom: calc(10px + 3vmin);
+    line-height: 1.3;
+}
+.news .date {
+    font-size: calc(0.7rem + 0.8vmin);
+    margin-bottom: calc(1px + 1vmin);
+    margin-left: calc(3px + 0.2vmin);
+    
+    color: #666;
+}
+.news .text {
+    font-size: calc(1.0rem + 1.6vmin);
+}
+.news a {
+    display: block;
+}</style><script src=../../cdn.jsdelivr.net/npm/jquery%402.2.4/dist/jquery.min.js defer></script><script src=../shared/js/commoneccb.js?3 defer></script><script>function _init ()
+{
+    $.ajax({url: "../shared/main/data/news.json", contentType: "json"}).then(function(data) 
+    {
+        var list = data.aidn.list;
+        var l = list.length;
+        
+        var s = "";
+
+        for (var i = 0; i < l; i ++)
+        {
+            var t = list[i];
+            var target = "";
+            if (0 <= t.url.indexOf("http"))  target = ' target="_blank"';
+            else t.url = "../" + t.url;
+
+            s += '<div class="news"><a href="' + t.url +'"' + target + '>';
+            s += '<p class="date">' + t.date + '</p>';
+            s += '<p class="text">' + t.text.replace(/<br>/g, "") + '</p>';
+            s += '</a></div>';
+        }
+        $("#news").html(s);
+        $("#loading").hide();
+    });
+}
+function _check () {
+    if (typeof jQuery == "undefined") setTimeout(_check, 10);
+    else $(_init);
+}
+_check();</script><body id=aidnx class=aidnsub><div id=google_translate_element style="margin:4vmin 4.4vmin"></div><div id=news></div><div id=bt_menu><img src=../shared/main/img/menu.svg></div><div id=menu><h1><a href="../index.html">AIDN</a></h1><h2>daniwell official website</h2><p class=none>NEWS</p><p><a href="../contents/index.html">CONTENTS</a></p><p><a href="../sound/index.html">SOUND</a></p><p><a href="../about/index.html">ABOUT</a></p><p class=spa><a href="../daniwell/index.html"><img src=../shared/main/img/disco.svg><span>DISCOGRAPHY</span></a></p></div><div id=loading><p></p></div>

@@ -1,0 +1,263 @@
+<!DOCTYPE html><html lang=ja>
+<!-- Mirrored from aidn.jp/sound/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Aug 2022 04:05:28 GMT -->
+<head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=apple-mobile-web-app-capable content=yes><meta name=viewport content="width=device-width, initial-scale=1.0, user-scalable=1"><meta name=description content="daniwell official website. 自作の音楽やコンテンツ、アプリなどを公開しています。"><title>AIDN | SOUND</title><meta name=twitter:card content=summary_large_image><meta name=twitter:image content=https://aidn.jp/shared/img/og/aidn_sound.png><meta name=twitter:site content=@daniwell_aidn><meta property=og:locale content=ja_JP><meta property=og:type content=website><meta property=og:image content=https://aidn.jp/shared/img/og/aidn_sound.png><meta property=og:title content="AIDN | SOUND"><meta property=og:description content="daniwell official website. 自作の音楽やコンテンツ、アプリなどを公開しています。"><meta property=fb:app_id content=260132667518211><link rel=apple-touch-icon href=../apple-touch-icon.png><link rel="shortcut icon" href=../shared/icon/favicon.ico><link rel=alternate media=handheld href="index.html"><link href="../../fonts.googleapis.com/css2783d.css?family=Noto+Sans+JP:wght@500&amp;family=Poppins:wght@500&amp;display=swap" rel=stylesheet><link href=../shared/main/css/mainc4ca.css?1 rel=stylesheet><style>#search {
+    margin: 4vmin 4.4vmin;
+    margin-bottom: calc(5px + 2vmin);
+    display: none;
+}
+#search svg {
+    vertical-align: middle;
+    margin-right: calc(6px + 1.4vmin);
+    width: calc(20px + 0.8vmin);
+}
+#in_search {
+    padding: calc(8px + 0.4vmin);
+    font-size: calc(16px + 0.1vmin);
+    
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: calc(1px + 0.1vmin) solid #777;
+    letter-spacing: 0.2rem;
+    caret-color: #000;
+
+    width: 300px;
+    max-width: 55%;
+}
+#in_search:focus {
+    outline: 0;
+    border-color: #000;
+}
+#in_search::placeholder {
+    color: #ccc;
+}
+
+
+.break {
+    word-break: break-all;
+}
+
+#sound {
+    overflow-x: hidden;
+    margin: 4vmin 4.4vmin;
+
+    margin-bottom: 0;
+    padding-bottom: 4vmin;
+}
+
+.sound {
+    margin-bottom: calc(8px + 4vmin);
+    line-height: 1.4;
+}
+.sound .title {
+    font-size: calc(1.1rem + 1.6vmin);
+    margin-bottom: calc(2px + 1vmin);
+}
+.sound .text {
+    font-size: calc(0.4rem + 0.6vmin);
+    
+    color: #333;
+    margin-bottom: calc(5px + 1.1vmin);
+    letter-spacing: calc(0.04rem + 0.4vmin);
+    margin-left: calc(3px + 0.2vmin);
+    word-break: normal;
+    line-height: 1.75;
+}
+
+
+.sound .btns {
+    font-size: calc(0.5rem + 0.7vmin);
+    letter-spacing: calc(0.04rem + 0.5vmin);
+    margin-bottom: calc(10px + 1.2vmin);
+    margin-left: calc(3px + 0.2vmin);
+
+    line-height: 2;
+    word-break: normal;
+
+    width: 103%;
+}
+.sound .btns a {
+    padding-bottom: calc(2px + 0.2vmin);
+    border-bottom: solid 2px #111;
+    color: #111;
+    margin-right: calc(10px + 1vmin);
+    margin-bottom: calc(8px + 0.8vmin);
+
+    display: inline-block;
+}
+.sound .btns svg {
+    width: calc(14px + 0.7vmin);
+    vertical-align: middle;
+    padding-right: calc(5px + 0.5vmin);
+}
+
+
+.sound .ui {
+    margin-bottom: calc(10px + 1.0vmin);
+}
+.sound .ui svg {
+    width: calc(30px + 3vmin);
+}
+
+.sound .ui .bt_play {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0;
+
+    padding-right: calc(10px + 1vmin);
+}
+.sound .ui .bt_play > svg:nth-child(2) {
+    display: none;
+}
+.sound .ui .btn_playing > svg:nth-child(2) {
+    display: inline;
+    fill: #fc0;
+}
+.sound .ui .btn_playing > svg:nth-child(1) {
+    display: none;
+}
+.sound .ui .bar {
+    width: calc(100% - 40px - 4vmin);
+    height: calc(3px + 0.3vmin);
+    background: #000;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+
+    cursor: pointer;
+}
+.sound .ui .bar::after {
+    content: "";
+    padding: 10px;
+    width: calc(100% - 10px - 1vmin);
+    height: 200%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    
+}
+
+.sound .ui .prog {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #fc0;
+    display: inline-block;
+}
+
+.sound .playing {
+    -webkit-animation: animLoading 0.4s ease-out infinite alternate;
+    animation: animLoading 0.4s ease-out infinite alternate;
+
+    color: #fc0;
+}
+.loading {
+    -webkit-animation: animLoading 0.15s ease-out infinite;
+    animation: animLoading 0.15s ease-out infinite;
+}
+
+
+
+#lyrics_base {
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.97);
+}
+#lyrics_area {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    letter-spacing: 0.2rem;
+    line-height: 1.4;
+
+    padding: 0 4.4vmin;
+    -webkit-overflow-scrolling: touch;
+}
+#lyrics_area h2 {
+    font-size: calc(1.3rem + 1.7vmin);
+    padding-top: 4vmin;
+    width: 85%;
+
+    
+}
+#lyrics_area p {
+    font-size: calc(0.6rem + 0.7vmin);
+    padding: 6vmin 0;
+}
+
+
+#bt_close {
+    position: fixed;
+    top: 0; right: 0;
+    padding: calc(10px + 3vmin);
+    cursor: pointer;
+}
+#bt_close img {
+    width: calc(36px + 5vmin);
+}
+
+@-webkit-keyframes animLoading {
+    0% { opacity: 0.2; }
+  100% { opacity: 1.0; }
+}
+@keyframes animLoading {
+    0% { opacity: 0.2; }
+  100% { opacity: 1.0; }
+}
+
+@media (min-width: 1000px) {
+    .sound span {
+        width: calc(100%/6);
+    }
+    .sound div {
+        white-space: nowrap;
+    }
+}
+
+p.select_con {
+    width: calc(120px + 5vmin);
+    border-bottom: 2px solid #000;
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8);
+    
+    margin-left: 4.4vmin;
+    margin-bottom: calc(25px + 2.5vmin);
+    
+    display: none;
+}
+p.select_con::after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    z-index: -1;
+}
+p.select_con select {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    background: none;
+    border: none;
+    font-size: calc(0.7rem + 0.8vmin);
+    height: 100%;
+    width: 100%;
+    letter-spacing: 0.20rem;
+    padding: calc(5px + 0.5vmin) 0;
+    padding-left: calc(10px + 1vmin);
+    color: #000;
+}
+select {
+    outline: none;
+}</style><script src=../../cdn.jsdelivr.net/npm/jquery%402.2.4/dist/jquery.min.js defer></script><script src=../shared/js/common1679.js?6 defer></script><script src=../shared/main/js/sound1679.js?6 defer></script><body id=aidnx class=aidnsub data-ver=9><svg xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink style="display: none"><symbol id=svg_buy viewbox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"></path></symbol><symbol id=svg_play viewbox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"></symbol><symbol id=svg_stop viewbox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5 8h-9v8h8v-8z"></symbol><symbol id=svg_music viewbox="0 0 24 24"><path d="M3.732 13h1.504s2.32-8.403 2.799-10.263c.156-.605.646-.738.965-.737.319.001.826.224.947.74.581 2.466 3.11 13.908 3.11 13.908s1.597-6.441 1.943-7.891c.101-.425.536-.757 1-.757.464 0 .865.343 1 .707.312.841 1.675 4.287 1.677 4.293h1.591c.346-.598.992-1 1.732-1 1.104 0 2 .896 2 2s-.896 2-2 2c-.741 0-1.388-.404-1.734-1.003-.939-.001-1.856 0-2.266.003-.503.004-.774-.289-.928-.629l-.852-2.128s-1.828 7.367-2.25 8.999c-.153.595-.646.762-.97.758-.324-.004-.847-.198-.976-.783-.549-2.487-2.081-9.369-3.123-14.053 0 0-1.555 5.764-1.936 7.099-.13.454-.431.731-.965.737h-2.268c-.346.598-.992 1-1.732 1-1.104 0-2-.896-2-2s.896-2 2-2c.74 0 1.386.402 1.732 1z"></symbol><symbol id=svg_movie viewbox="-1 -1 26 26"><path d="M0 1v22h24v-22h-24zm4 20h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm14 16h-12v-8h12v8zm0-10h-12v-8h12v8zm4 10h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2z"></path></symbol><symbol id=svg_web viewbox="-1 -1 26 26"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12m2.557 16h-5.115c.546 2.46 1.441 4.114 2.558 5.744 1.194-1.741 2.041-3.41 2.557-5.744m-7.157 0h-4.567c1.236 2.825 3.704 4.972 6.755 5.716-1.048-1.733-1.783-3.658-2.188-5.716m13.767 0h-4.567c-.391 1.988-1.095 3.887-2.175 5.694 3.012-.763 5.517-2.895 6.742-5.694m-14.005-6h-4.962c-.267 1.313-.267 2.685 0 4h4.915c-.119-1.329-.101-2.672.047-4m7.661 0h-5.647c-.165 1.326-.185 2.672-.053 4h5.753c.133-1.328.111-2.673-.053-4m6.977 0h-4.963c.148 1.328.166 2.671.048 4h4.915c.26-1.285.273-2.648 0-4m-12.156-7.729c-3.077.732-5.567 2.886-6.811 5.729h4.653c.435-2.042 1.178-3.985 2.158-5.729m2.355-.048c-1.089 1.77-1.91 3.453-2.463 5.777h4.927c-.534-2.246-1.337-3.948-2.464-5.777m2.368.069c1.013 1.812 1.733 3.76 2.146 5.708h4.654c-1.232-2.816-3.762-4.958-6.8-5.708"></path></symbol><symbol id=svg_tw viewbox="0 0 24 24"><path d="M21.5,6.917c-0.662,0.294-1.374,0.492-2.121,0.582c0.765-0.458,1.348-1.181,1.625-2.042 c-0.714,0.422-1.505,0.73-2.346,0.895c-0.672-0.719-1.635-1.167-2.695-1.167c-2.385,0-4.137,2.225-3.598,4.535 C9.298,9.564,6.575,8.095,4.754,5.861c-0.968,1.659-0.501,3.831,1.144,4.93c-0.605-0.019-1.174-0.186-1.672-0.461 c-0.04,1.709,1.187,3.31,2.963,3.667c-0.52,0.141-1.089,0.173-1.668,0.063c0.47,1.466,1.836,2.532,3.45,2.563 c-1.556,1.217-3.51,1.762-5.471,1.53c1.635,1.049,3.574,1.66,5.659,1.66c6.859,0,10.732-5.791,10.498-10.986 C20.379,8.31,21.005,7.658,21.5,6.917z"></path></symbol><symbol id=svg_youtube viewbox="0 0 159 110"><path d="m154 17.5c-1.82-6.73-7.07-12-13.8-13.8-9.04-3.49-96.6-5.2-122 0.1-6.73 1.82-12 7.07-13.8 13.8-4.08 17.9-4.39 56.6 0.1 74.9 1.82 6.73 7.07 12 13.8 13.8 17.9 4.12 103 4.7 122 0 6.73-1.82 12-7.07 13.8-13.8 4.35-19.5 4.66-55.8-0.1-75z" fill=#000></path><path d="m105 55-40.8-23.4v46.8z" fill=#fff></path></symbol><symbol id=svg_niconico viewbox="-2 -2 28 28"><path d="M.4787 7.534v12.1279A2.0213 2.0213 0 0 0 2.5 21.6832h2.3888l1.323 2.0948a.4778.4778 0 0 0 .4043.2205.4778.4778 0 0 0 .441-.2205l1.323-2.0948h6.9828l1.323 2.0948a.4778.4778 0 0 0 .441.2205c.1838 0 .3308-.0735.4043-.2205l1.323-2.0948h2.6462a2.0213 2.0213 0 0 0 2.0213-2.0213V7.5339a2.0213 2.0213 0 0 0-2.0213-1.9845h-7.681l4.4468-4.4469L17.1637 0l-5.1452 5.1452L6.8 0 5.6973 1.1025l4.4102 4.4102H2.5367a2.0213 2.0213 0 0 0-2.058 2.058z"></symbol><symbol id=svg_lyrics viewbox="-1 -1 26 26"><path d="M4 22v-20h16v11.543c0 4.107-6 2.457-6 2.457s1.518 6-2.638 6h-7.362zm18-7.614v-14.386h-20v24h10.189c3.163 0 9.811-7.223 9.811-9.614zm-5-1.386h-10v-1h10v1zm0-4h-10v1h10v-1zm0-3h-10v1h10v-1z"></symbol></svg><div id=search><div id=google_translate_element style="margin-bottom: 3vmin"></div><svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M21.172 24l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z"></svg><input id=in_search placeholder=Search></div><p class=select_con><select name=sortby id=sortby><option value=0>追加順<option value=1>新曲順<option value=2 selected>人気順</select></p><div id=sound></div><div id=lyrics_base><div id=lyrics_area></div><div id=bt_close><img src=../shared/main/img/close.svg></div></div><div id=bt_menu><img src=../shared/main/img/menu.svg></div><div id=menu><h1><a href="../index.html">AIDN</a></h1><h2>daniwell official website</h2><p><a href="../news/index.html">NEWS</a></p><p><a href="../contents/index.html">CONTENTS</a></p><p class=none>SOUND</p><p><a href="../about/index.html">ABOUT</a></p><p class=spa><a href="../daniwell/index.html"><img src=../shared/main/img/disco.svg><span>DISCOGRAPHY</span></a></p></div><div id=loading><p></p></div>
