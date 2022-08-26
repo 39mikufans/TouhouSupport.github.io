@@ -1,94 +1,69 @@
-<HTML>
+<!DOCTYPE html><html lang=ja><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=apple-mobile-web-app-capable content=yes><meta name=viewport content="width=device-width, initial-scale=1.0, user-scalable=1"><meta name=description content="daniwell official website. 自作の音楽やコンテンツ、アプリなどを公開しています。"><title>AIDN | daniwell official website</title><meta name=twitter:card content=summary_large_image><meta name=twitter:image content=https://aidn.jp/shared/img/og/aidn.png><meta name=twitter:site content=@daniwell_aidn><meta property=og:locale content=ja_JP><meta property=og:type content=website><meta property=og:image content=https://aidn.jp/shared/img/og/aidn.png><meta property=og:title content="AIDN | daniwell official website"><meta property=og:description content="daniwell official website. 自作の音楽やコンテンツ、アプリなどを公開しています。"><meta property=fb:app_id content=260132667518211><meta name=google-site-verification content=kDm7L5QyOIWwvxJVw9Aq1QppIH30RPw95dhBT2YTXbE><meta name=msvalidate.01 content=02E2E4656D92CC15CD8FA7B1A4D31889><link rel=apple-touch-icon href=apple-touch-icon.png><link rel="shortcut icon" href=shared/icon/favicon.ico><link rel=alternate media=handheld href="https://aidn.jp/"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Poppins:wght@500&display=swap" rel=stylesheet><link href=shared/main/css/main.css?1 rel=stylesheet><style>#view, #matter {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: hidden;
+}
+#view {
+    opacity: 0.0;
+    z-index: 2;
+}
+div canvas {
+    width: 100%;
+    height: 100%;
+}
 
-<HEAD>
-<link rel="shortcut icon" href="images/game_2_type1_4_icon01.ico">
-<TITLE>Welcome to TouhouSupport!</TITLE>
-</HEAD>
+#gyro {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#gyro svg {
+    padding: calc(10px + 1vmin);
+    width: calc(20px + 2.0vmin);
+    fill: #000;
+}
 
-<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
-<body>
-<div id="header">
-<h1 style="text-align: center;">Fermi-ko</h1>
-<div id="menu">
-
-<body>
-<div align="center">
-<img src="images/001.gif">
-</div>
-</body>
-
-<H3>About me</H3>
-  
-<p>
-  My name is Yihang He,you can also call me Ameame. As you can see,my favorite things include Touhou-Project,games and math.Now studying at 
-  Southeast University, major is financial engineering.Ordinary affairs are nothing more than games, reading books, coding and writing papers.
-  Now I have a lot of free time for me to explore some wonderful ideas.
-</p>
-
-<H3>Previous experience</H3>
-
-<p>
-  A long story about my past.Around 2001, my parents bought the first computer, I remember it was a Dell desktop computer. But I don’t use it very
-  well (in fact, I’ve broken the keyboard many times). I’m more interested in the NES that my brother left me, because of it I fell in love with 8-bit
-  things and electronic games. Looking at it now, I think the love for mathematics and computers was also brought to me by that time.Now my goal is to
-  complete my graduation thesis, and try to build a Chinese battle platform and scoring system about Touhou, perhaps to sort out many of my past math notes.
-</p>
-
-<H3>About Touhou</H3>
-  
-<p>
-  About Touhou-Project, is a bullet hell shoot 'em up video game series created by one-man Japanese dōjin soft developer <a href="http://www16.big.or.jp/~zun/" style="color:purple;text-decoration:none;" target="_blank">Team Shanghai Alice</a>.The Touhou Project
-  has become notable as a prominent source of Japanese dōjin content, with the series spawning a vast body of fan-made works including artwork, music, print
-  works, video games, anime, and Internet memes. The popularity of the series and its derivative works has been attributed in part to the few restrictions
-  placed by ZUN on the use of his characters and settings. Unofficial works are frequently sold at fan conventions, including Comiket, where the franchise
-  has frequently held the record for circle participation, and the official convention Reitaisai, where trial versions of the official games are typically
-  distributed prior to release.If you want to know more, you can click on the link at the bottom of the page.
-</p>
-
-<body>
-<div align="center">
-<img src="images/th12.3/game_2_type1_0_list01.png">
-<img src="images/th12.3/game_2_type1_1_list01.png">
-<img src="images/th12.3/game_2_type1_2_list01.png">
-<img src="images/th12.3/game_2_type1_3_list01.png">
-<img src="images/th12.3/game_2_type1_4_list01.png">
-<img src="images/th12.3/game_2_type1_5_list01.png">
-<img src="images/th12.3/game_2_type1_6_list01.png">
-<img src="images/th12.3/game_2_type1_7_list01.png">
-<img src="images/th12.3/game_2_type1_8_list01.png">
-<img src="images/th12.3/game_2_type1_9_list01.png">
-<img src="images/th12.3/game_2_type1_10_list01.png">
-<img src="images/th12.3/game_2_type1_11_list01.png">
-<img src="images/th12.3/game_2_type1_12_list01.png">
-<img src="images/th12.3/game_2_type1_13_list01.png">
-<img src="images/th12.3/game_2_type1_14_list01.png">
-<img src="images/th12.3/game_2_type1_15_list01.png">
-<img src="images/th12.3/game_2_type1_16_list01.png">
-<img src="images/th12.3/game_2_type1_17_list01.png">
-<img src="images/th12.3/game_2_type1_18_list01.png">
-<img src="images/th12.3/game_2_type1_19_list01.png">
-</div>
-</body>
-                                                   
-<div class="neighbor-link">
-<hr>
-<span>Links</span>
-<a href="https://touhoufans.cn/" style="color:purple;text-decoration:none;" target="_blank">Institute of Finance Hisoutensoku</a>
-&diams;
-<a href="http://www16.big.or.jp/~zun/" style="color:purple;text-decoration:none;" target="_blank">上海アリス幻樂団</a>
-&diams;
-<a href="http://tasofro.net/" style="color:purple;text-decoration:none;" target="_blank">黄昏フロンティア</a>
-&diams;
-<a href="https://tenco.info/" style="color:purple;text-decoration:none;" target="_blank">Tenco!</a>
-&diams;
-<a href="https://hisouten.koumakan.jp/" style="color:purple;text-decoration:none;" target="_blank">Touhou Hisoutensoku Wiki</a>
-</div>
-<footer>
-                                        
-<HR>
-
-<p>
-Copyright &copy 2020-Now TouhouSupport.
-</p>
-
-</BODY>
+body, html {
+    overflow: hidden;
+}</style><script src=https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js defer></script><script src=https://cdn.jsdelivr.net/npm/three@0.96.0/build/three.min.js async></script><script src=shared/js/common.js?3 defer></script><script src=shared/main/js/index.js?3 defer></script><body id=aidnx><svg xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink style="display: none"><symbol id=svg_tw viewbox="0 0 24 24"><path d="M21.5,6.917c-0.662,0.294-1.374,0.492-2.121,0.582c0.765-0.458,1.348-1.181,1.625-2.042 c-0.714,0.422-1.505,0.73-2.346,0.895c-0.672-0.719-1.635-1.167-2.695-1.167c-2.385,0-4.137,2.225-3.598,4.535 C9.298,9.564,6.575,8.095,4.754,5.861c-0.968,1.659-0.501,3.831,1.144,4.93c-0.605-0.019-1.174-0.186-1.672-0.461 c-0.04,1.709,1.187,3.31,2.963,3.667c-0.52,0.141-1.089,0.173-1.668,0.063c0.47,1.466,1.836,2.532,3.45,2.563 c-1.556,1.217-3.51,1.762-5.471,1.53c1.635,1.049,3.574,1.66,5.659,1.66c6.859,0,10.732-5.791,10.498-10.986 C20.379,8.31,21.005,7.658,21.5,6.917z"></path></symbol><symbol id=svg_youtube viewbox="0 0 159 110"><path d="m154 17.5c-1.82-6.73-7.07-12-13.8-13.8-9.04-3.49-96.6-5.2-122 0.1-6.73 1.82-12 7.07-13.8 13.8-4.08 17.9-4.39 56.6 0.1 74.9 1.82 6.73 7.07 12 13.8 13.8 17.9 4.12 103 4.7 122 0 6.73-1.82 12-7.07 13.8-13.8 4.35-19.5 4.66-55.8-0.1-75z" fill=#000></path><path d="m105 55-40.8-23.4v46.8z" fill=#fff></path></symbol><symbol id=svg_niconico viewbox="-2 -2 28 28"><path d="M.4787 7.534v12.1279A2.0213 2.0213 0 0 0 2.5 21.6832h2.3888l1.323 2.0948a.4778.4778 0 0 0 .4043.2205.4778.4778 0 0 0 .441-.2205l1.323-2.0948h6.9828l1.323 2.0948a.4778.4778 0 0 0 .441.2205c.1838 0 .3308-.0735.4043-.2205l1.323-2.0948h2.6462a2.0213 2.0213 0 0 0 2.0213-2.0213V7.5339a2.0213 2.0213 0 0 0-2.0213-1.9845h-7.681l4.4468-4.4469L17.1637 0l-5.1452 5.1452L6.8 0 5.6973 1.1025l4.4102 4.4102H2.5367a2.0213 2.0213 0 0 0-2.058 2.058z"></symbol><symbol id=svg_gyro viewbox="0 0 500 500"><path fill-rule=evenodd clip-rule=evenodd d="M456.7,16.1h0.2c7.433,0.033,13.8,2.683,19.1,7.95
+        c5.3,5.333,7.95,11.733,7.95,19.2c0.033,7.467-2.617,13.867-7.95,19.2c-5.267,5.267-11.634,7.917-19.1,7.95
+        c-0.067-0.033-0.15-0.033-0.25,0c-2.567,0-5.017-0.316-7.351-0.95L435.95,82.8C478.65,129.7,500,185.45,500,250.05
+        c0.033,69-24.384,127.917-73.25,176.75c-48.767,48.8-107.667,73.2-176.7,73.2h-0.1c-64.567,0-120.267-21.35-167.1-64.05L69.4,449.35
+        c0.667,2.4,0.983,4.934,0.95,7.601c0.033,7.434-2.617,13.8-7.95,19.1c-5.267,5.3-11.617,7.983-19.05,8.05H43.1
+        c-7.467-0.066-13.833-2.75-19.1-8.05c-5.333-5.3-7.983-11.649-7.95-19.05c0-7.566,2.65-14.017,7.95-19.35
+        c5.3-5.267,11.667-7.884,19.1-7.851c0.066,0,0.133,0,0.2,0c2.6-0.033,5.05,0.267,7.35,0.9l13.45-13.45
+        C21.333,370.35-0.033,314.616,0,250.05c0-69.033,24.4-127.966,73.2-176.8C122.067,24.417,181,0,250,0
+        c64.533,0,120.283,21.367,167.25,64.1l13.35-13.35c-0.666-2.367-1-4.85-1-7.45c0.034-7.533,2.7-13.95,8-19.25
+        C442.9,18.75,449.267,16.1,456.7,16.1z M407.7,91.65C364.1,48.25,311.533,26.533,250,26.5c-61.5,0.033-114.533,22.267-159.1,66.7
+        c-0.167,0.1-0.3,0.233-0.4,0.4c-42.667,44-64,96.15-64,156.45c-0.033,61.634,21.7,114.233,65.2,157.8l0.5,0.5
+        c43.533,43.467,96.133,65.2,157.8,65.2c61.767,0,114.45-21.816,158.05-65.45c43.667-43.633,65.483-96.316,65.45-158.05
+        c-0.033-61.633-21.767-114.233-65.2-157.8L408.05,92c-0.033-0.033-0.066-0.067-0.1-0.1L407.7,91.65z M272.65,227.35
+        c12.899,12.933,22.466,25.417,28.699,37.45c9.801,18.533,10.084,31.017,0.851,37.45c-6.467,9.267-18.983,9.017-37.55-0.75
+        c-11.967-6.3-24.4-15.9-37.3-28.8c-12.9-12.9-22.483-25.317-28.75-37.25c-9.733-18.6-10-31.133-0.8-37.6
+        c6.5-9.233,19-8.95,37.5,0.85C247.3,204.9,259.75,214.45,272.65,227.35z M269.7,269.75c1.366-1.333,0.6-4.417-2.3-9.25
+        c-2.867-4.767-7.017-9.884-12.45-15.35c-5.467-5.433-10.6-9.617-15.4-12.55c-4.8-2.833-7.883-3.583-9.25-2.25
+        c-1.333,1.367-0.566,4.45,2.3,9.25c2.867,4.833,7.033,9.967,12.5,15.4c5.433,5.467,10.55,9.616,15.35,12.45
+        C265.283,270.35,268.366,271.116,269.7,269.75z M86.6,289.45l0.05-0.05c6.133-21.601,15.583-42.7,28.35-63.3
+        c5.2,7.833,10.833,15.717,16.9,23.65c-8.633,15.333-15.25,30.983-19.85,46.95c-10.167,35.767-6.7,62.75,10.4,80.95
+        c18.2,17.066,45.167,20.5,80.9,10.3c15.933-4.601,31.583-11.2,46.95-19.8c7.9,6.1,15.783,11.75,23.65,16.949
+        c-20.634,12.733-41.75,22.167-63.35,28.301c-47.5,13.533-83.117,7.85-106.85-17.051C78.817,372.583,73.1,336.95,86.6,289.45z
+         M360.4,308.05c-7.634,9.267-15.967,18.417-25,27.45c-5.733,5.767-11.517,11.233-17.351,16.4
+        c-7.666-4.567-15.383-9.551-23.149-14.95c7.366-6.233,14.633-12.95,21.8-20.15c10.5-10.467,19.95-21.083,28.35-31.85
+        c-16.267-22.733-36.3-46.034-60.1-69.9c-23.834-23.833-47.1-43.867-69.8-60.1c-10.8,8.4-21.45,17.833-31.95,28.3
+        c-7.167,7.2-13.85,14.467-20.05,21.8c-5.467-7.767-10.467-15.466-15-23.1c5.167-5.833,10.617-11.633,16.35-17.4
+        c9.067-9.033,18.233-17.367,27.5-25c-6-3.667-11.95-7.05-17.85-10.15l0.05,0.05c-29.167-15.4-48.383-19.684-57.65-12.85
+        c-1.1,1.467-1.9,3.2-2.4,5.2c-2.566,10.7,2.517,28.184,15.25,52.45c18.767,35.5,47.317,72.433,85.65,110.8
+        c38.334,38.367,75.233,66.9,110.7,85.601c20.233,10.6,35.783,15.933,46.65,16c0.966-0.034,1.899-0.084,2.8-0.15
+        c3.3-0.4,6.033-1.4,8.2-3c6.866-9.267,2.583-28.483-12.851-57.65C367.45,319.95,364.066,314.017,360.4,308.05z M394,313.5l0.05,0.05
+        c23.134,44,25.834,73.55,8.101,88.65c-4.9,5.767-11.317,9.35-19.25,10.75c-16.5,3.1-39.65-3.2-69.45-18.9l0.05,0.05
+        c-37.6-19.733-76.65-49.85-117.15-90.35S125.733,224.2,106,186.6c-13.1-24.867-19.633-45.083-19.6-60.65
+        c-0.133-12.1,3.684-21.45,11.45-28.05c15.1-17.733,44.667-15.017,88.7,8.15c9.267,4.867,18.617,10.35,28.05,16.45
+        c24.233-16.633,49.15-28.583,74.75-35.85c47.534-13.533,83.2-7.85,107,17.05c24.867,23.767,30.534,59.4,17,106.9
+        c-7.267,25.667-19.216,50.6-35.85,74.8C383.634,294.866,389.134,304.233,394,313.5z M361.2,262.05
+        c12.033-19.133,20.934-38.7,26.7-58.7c10.233-35.767,6.816-62.75-10.25-80.95c-18.233-17.066-45.25-20.5-81.051-10.3l0.051-0.05
+        c-20,5.767-39.551,14.7-58.65,26.8c21.467,16,43.366,35.167,65.7,57.5C326.033,218.683,345.2,240.583,361.2,262.05z"></path></symbol></svg><div id=view></div><div id=menu><h1>AIDN</h1><h2>daniwell official website</h2><p><a href="news/">NEWS</a></p><p><a href="contents/">CONTENTS</a></p><p><a href="sound/">SOUND</a></p><p><a href="about/">ABOUT</a></p><p class=spa><a href="daniwell/"><img src=shared/main/img/disco.svg><span>DISCOGRAPHY</span></a></p><p class="spa icons"><a href=https://www.youtube.com/user/daniwellaidn target=_blank><svg viewbox="0 0 24 24"><use xlink:href=#svg_youtube></use></svg></a><a href="https://www.nicovideo.jp/mylist/4009728#+sort=8" target=_blank class=nico><svg viewbox="0 0 24 24"><use xlink:href=#svg_niconico></use></svg></a><a href=https://twitter.com/daniwell_aidn target=_blank><svg viewbox="0 0 24 24" style="transform: scale(1.2)"><use xlink:href=#svg_tw></use></svg></a></p></div><div id=loading><p></p></div><div id=gyro><svg viewbox="0 0 24 24"><use xlink:href=#svg_gyro></use></svg></div>
